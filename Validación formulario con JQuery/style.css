@@ -1,0 +1,235 @@
+body {
+    background: lightgray;
+}
+
+.formulario h2 {
+
+    color: black;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.formulario label {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 12px 12px 0;
+}
+
+.formulario input[type="text"] {
+    width: 50%;
+    padding: 12px;
+    resize: vertical;
+}
+
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.formulario input[type="password"] {
+    width: 50%;
+    padding: 12px;
+    resize: vertical;
+}
+
+.errorPass {
+    padding-top: 6%;
+}
+
+select {
+    height: 30px;
+    width: 260px;
+    padding: 5px 8px;
+}
+
+
+
+.formulario input {
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 10px;
+    color: gray;
+    font-size: 12px;
+}
+
+
+
+
+button.submit {
+    background-color: gray;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+}
+
+button.submit:hover {
+    border: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: gray;
+    color: #ffffff;
+}
+
+button.submit:active {
+    background-color: #ffffff;
+    color: gray;
+}
+
+@keyframes animSpan {
+    from {
+        font-size: 2px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+span {
+    color: red;
+    animation-name: animSpan;
+    animation-duration: 4s;
+    font-size: 16px;
+}
+
+@keyframes bordes {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    button[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    button[id=botonRestablecer] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.correcto {
+    border-color: rgb(98, 245, 130);
+    animation-name: bordes;
+    animation-duration: 4s;
+}
+
+.incorrecto {
+    border-color: rgb(240, 6, 6);
+    animation-name: bordes;
+    animation-duration: 4s;
+}
+
+
+
+.strength_meter {
+    position: absolute;
+    width: 50%;
+    height: 12px;
+    border-radius: 5px;
+    padding-right: 13px;
+}
+
+.button_strength {
+    color: rgb(48, 7, 161);
+    font-size: 16px;
+}
+
+
+
+.veryweak {
+    background-color: #FFA0A0;
+    border-color: #F04040 !important;
+    width: 20% !important;
+}
+
+.weak {
+    background-color: #FFB78C;
+    border-color: #FF853C !important;
+    width: 30% !important;
+}
+
+.medium {
+    background-color: #FFEC8B;
+    border-color: #FC0 !important;
+    width: 50% !important;
+}
+
+.strong {
+    background-color: #C3FF88;
+    border-color: #8DFF1C !important;
+    width: 70% !important;
+}
+
+
+.adv {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 32px;
+}
+
+
+#botonRestablecer {
+    background-color: gray;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+#botonRestablecer:hover {
+    border: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: gray;
+    color: #ffffff;
+}
+
+#botonRestablecer:active {
+    background-color: #ffffff;
+    color: gray;
+}
