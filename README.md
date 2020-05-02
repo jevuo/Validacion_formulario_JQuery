@@ -1,1 +1,2 @@
-# jevuo.github.io
+-Validación de formulario con JQuery.
+-Con animaciones y diseño con css.
